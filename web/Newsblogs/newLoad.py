@@ -1,9 +1,9 @@
 import pandas as pd
 import csv
 
-pathDunya= 'D:\FINAL PRODUCT (4-4-19)\webapplications(4-4-19)\webapplications\\dunya.csv'
-pathAry = 'D:\FINAL PRODUCT (4-4-19)\webapplications(4-4-19)\webapplications\\ary.csv'
-pathNOne = 'D:\FINAL PRODUCT (4-4-19)\webapplications(4-4-19)\webapplications\\newsOne.csv'
+pathDunya= 'dunya.csv'
+pathAry = 'ary.csv'
+pathNOne = 'newsOne.csv'
 chunk_size = 500
 
 # readold=pd.read_csv(pathold, iterator = True)
