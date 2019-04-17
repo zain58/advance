@@ -631,6 +631,7 @@ def dunya(request):
             category5 += "<h2 style='color:black' >" + ident +"</h2>"
     return render(request, 'dunya.html', {'title': 'HOME- Dunya', 'h1': 'Dunya', 'categ': category,'html':html, 'categ1': category1,'html1':html1,'categ2': category2,'html2':html2,'categ3': category3,'html3':html3,'categ4': category4,'html4':html4,'categ5': category5,'html5':html5,})
 
+
 #About
 # def about(request):
 	# return render(request, 'about.html', {'title': 'About'},)

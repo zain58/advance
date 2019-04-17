@@ -24,5 +24,6 @@ urlpatterns = [
     path('home/ARY', views.ary, name='ary'),
     path('home/dunya', views.dunya, name='dunya'),
     path('home/newsone', views.newsone, name='newsone'),
+
     # path('home/about', views.about, name='about'),
 ]
