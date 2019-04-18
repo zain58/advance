@@ -9,8 +9,8 @@ def homepage(request):
     
 # home
 def Home(request):
-    data1 = newLoad.dfA
-    data2 = newLoad.dfN
+    data1 = newLoad.dfN
+    data2 = newLoad.dfA
     dtlist = []
     data = []
     htmlA=''; htmlN=''; categoryA=''; categoryN= '';
