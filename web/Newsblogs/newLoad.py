@@ -3,7 +3,7 @@ import csv
 
 pathDunya= 'dunya.csv'
 pathAry = 'ary.csv'
-pathNOne = 'newsOne.csv'
+pathNOne = 'news.csv'
 chunk_size = 500
 
 # readold=pd.read_csv(pathold, iterator = True)
