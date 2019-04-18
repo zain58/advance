@@ -1,2 +1,2 @@
 import os
-os.rename('E:\\work fyp\\final crawler\\venv\\NewsOnetemp.csv', 'E:\\work fyp\\final crawler\\venv\\news.csv')
+os.rename('C:\\Users\\Zain Noman\\advance\\web\\AryTemp.csv', 'C:\\Users\\Zain Noman\\advance\\web\\ary.csv')
