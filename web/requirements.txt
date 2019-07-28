@@ -15,4 +15,5 @@ binaryornot==0.4.4
 bs4==0.0.1
 certifi==2019.3.9
 chardet==3.0.4
+python==3.7.0
 
