@@ -6,6 +6,9 @@ from . import newLoad
 # index
 def homepage(request):
     return render(request, 'index.html',{'title': 'HOME- ADVANCE BULLETIN'},)
+#button
+# def  but(request):
+#     return render(request, 'button.html')
     
 # home
 def Home(request):
