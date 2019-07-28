@@ -16,7 +16,7 @@ Including another URLconf
 from django.urls import path
 from . import views
 
-app_name = ""
+app_name = "Newsblogs"
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', views.homepage, name='index'),
