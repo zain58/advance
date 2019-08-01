@@ -11,7 +11,6 @@ import nltk
 import pandas as pd
 nltk.download('punkt')
 import re
-import csv
 import pandas
 from nltk.tokenize import sent_tokenize
 import os

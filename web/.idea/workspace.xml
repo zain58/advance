@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae0944b6-5c8e-4304-b744-c4f4b1bb3241" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARY.py" beforeDir="false" afterPath="$PROJECT_DIR$/ARY.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
     <SUITE FILE_PATH="coverage/web$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1564409195510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PycharmProjects" />
     <SUITE FILE_PATH="coverage/web$ARY__1_.coverage" NAME="ARY (1) Coverage Results" MODIFIED="1555564677432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/work fyp/final crawler/venv" />
     <SUITE FILE_PATH="coverage/web$views.coverage" NAME="views Coverage Results" MODIFIED="1564139770693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Newsblogs" />
-    <SUITE FILE_PATH="coverage/web$ARY.coverage" NAME="ARY Coverage Results" MODIFIED="1564488001547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/web$ARY.coverage" NAME="ARY Coverage Results" MODIFIED="1564656560920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/web$sec__1_.coverage" NAME="sec (1) Coverage Results" MODIFIED="1555527023719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler" />
     <SUITE FILE_PATH="coverage/web$sec__2_.coverage" NAME="sec (2) Coverage Results" MODIFIED="1555527137128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/final crawler" />
     <SUITE FILE_PATH="coverage/web$DN.coverage" NAME="DN Coverage Results" MODIFIED="1555571852712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/work fyp/final crawler/venv" />
@@ -36,6 +34,7 @@
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.37" value="1" />
@@ -43,7 +42,7 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,49 +65,24 @@
         <counts>
           <entry key="Django Console" value="16" />
           <entry key="html" value="258" />
-          <entry key="py" value="376" />
+          <entry key="py" value="377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="258" />
-          <entry key="Python" value="392" />
+          <entry key="Python" value="393" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="351" column="43" selection-start-line="351" selection-start-column="43" selection-end-line="351" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Newsblogs/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="16" column="15" selection-start-line="9" selection-start-column="2" selection-end-line="10" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1564139770648" expanded="true" signature="253:303" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Newsblogs/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-              <folding>
-                <element signature="e#639#667#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="7581">
+              <caret line="361" column="42" selection-start-line="361" selection-start-column="42" selection-end-line="361" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -122,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ARY.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="231">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -162,7 +136,6 @@
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/NewsOne.py" />
         <option value="$PROJECT_DIR$/DN.py" />
-        <option value="$PROJECT_DIR$/ARY.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="E:/work fyp/final crawler/venv/ARY.py" />
         <option value="E:/work fyp/final crawler/venv/DN.py" />
@@ -175,6 +148,7 @@
         <option value="$PROJECT_DIR$/templates/button.html" />
         <option value="$PROJECT_DIR$/webapplications/urls.py" />
         <option value="$PROJECT_DIR$/Newsblogs/urls.py" />
+        <option value="$PROJECT_DIR$/ARY.py" />
       </list>
     </option>
   </component>
@@ -213,18 +187,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="Newsblogs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
@@ -245,6 +213,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,7 +244,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.ARY">
-    <configuration name="ARY" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ARY" type="PythonConfigurationType" factoryName="Python">
       <module name="web" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -464,7 +433,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ARY" />
         <item itemvalue="Python.urls" />
         <item itemvalue="Python.views" />
         <item itemvalue="Python.sec" />
@@ -498,7 +466,7 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09667025" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09774436" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -558,15 +526,9 @@
     <entry file="file://$PROJECT_DIR$/staticfiles/staticfiles.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Newsblogs/tests.py" />
+    <entry file="file://$PROJECT_DIR$/Newsblogs/apps.py" />
+    <entry file="file://$PROJECT_DIR$/Newsblogs/admin.py" />
     <entry file="file://$PROJECT_DIR$/Crawler/ARY.py" />
     <entry file="file://$PROJECT_DIR$/Crawler/sec.py" />
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -591,9 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Newsblogs/models.py" />
     <entry file="file://E:/work fyp/final crawler/venv/ARY.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -608,13 +568,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/newLoad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Newsblogs/newLoad.py" />
     <entry file="file://E:/work fyp/final crawler/venv/NewsOne.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3549">
@@ -629,13 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Newsblogs/a.py" />
     <entry file="file://$PROJECT_DIR$/sec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -672,24 +620,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/views.py">
+    <entry file="file://$PROJECT_DIR$/Newsblogs/views.py" />
+    <entry file="file://$PROJECT_DIR$/Newsblogs/urls.py" />
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="15" selection-start-line="9" selection-start-column="2" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1564139770648" expanded="true" signature="253:303" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Newsblogs/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-          <folding>
-            <element signature="e#639#667#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="7581">
+          <caret line="361" column="42" selection-start-line="361" selection-start-column="42" selection-end-line="361" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -702,18 +638,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ARY.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="231">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="351" column="43" selection-start-line="351" selection-start-column="43" selection-end-line="351" selection-end-column="43" />
         </state>
       </provider>
     </entry>

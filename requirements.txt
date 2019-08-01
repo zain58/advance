@@ -1,0 +1,17 @@
+django
+gunicorn
+django-heroku
+stopwords
+textblob
+Unidecode
+urlopen
+nltk
+numpy
+pager
+pandas
+beautifulsoup4
+binaryornot
+bs4
+certifi
+chardet
+urllib3
