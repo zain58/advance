@@ -33,7 +33,7 @@ def Home(request):
     for index, row in data1.iterrows():
         if row['category'] == 'Pakistan':
             imgurl=str(row['img-url'])
-            htmlA += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            htmlA += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
         else: 
             row['category']
 #ARY Pakistan
@@ -54,14 +54,14 @@ def Home(request):
     for index, row in data2.iterrows():
          if row['category'] == 'PAKISTAN':
             imgurl=str(row['img-url'])
-            htmlN += "<div class='card' style='margin:2em; width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            htmlN += "<div class='card' style='margin:2em; width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
 
     return render(request, 'home.html', {'title': 'HOME- ADVANCE BULLETIN','h1': 'Breaking', 'categA': categoryA, 'categN':categoryN,'htmlA':htmlA,'htmlN':htmlN},)
 
 #Ary
 def ary(request):
 
-#for pakistan
+#for Pakistan
 
     data2 = newLoad.dfA
     dtlist = []
@@ -72,7 +72,7 @@ def ary(request):
             imgurl=str(row['img-url'])
 
 
-            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data2.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -102,7 +102,7 @@ def ary(request):
             imgurl1=str(row['img-url'])
 
 
-            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl1 if imgurl1!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl1 if imgurl1!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data3.iterrows():
         dt3=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist1.append(dt3[3])
@@ -129,7 +129,7 @@ def ary(request):
             imgurl2=str(row['img-url'])
 
 
-            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl2 if imgurl2!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl2 if imgurl2!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data4.iterrows():
         dt4=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist2.append(dt4[3])
@@ -159,7 +159,7 @@ def ary(request):
             imgurl3=str(row['img-url'])
 
 
-            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl3 if imgurl3!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl3 if imgurl3!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data5.iterrows():
         dt5=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist3.append(dt5[3])
@@ -188,7 +188,7 @@ def ary(request):
             imgurl4=str(row['img-url'])
 
 
-            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl4 if imgurl4!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl4 if imgurl4!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data6.iterrows():
         dt6=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist4.append(dt6[3])
@@ -216,7 +216,7 @@ def ary(request):
             imgurl5=str(row['img-url'])
 
 
-            html6 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl5 if imgurl5!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html6 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl5 if imgurl5!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in data7.iterrows():
         dt7=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist5.append(dt7[3])
@@ -243,7 +243,7 @@ def ary(request):
 #NEWSONE
 def newsone(request):
     dataN = newLoad.dfN
-#for pakistan
+#for Pakistan
     dtlist = []
     data = []
     html ='';  category = ''; updates = '';
@@ -252,7 +252,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -277,7 +277,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN1.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -299,11 +299,11 @@ def newsone(request):
     data = []
     html2='';  category2 = ''; updates = '';
     for index, row in dataN2.iterrows():
-        if row['category'] == 'PSL 2019':
+        if row['category'] == 'WORLD CUP 2019':
             imgurl=str(row['img-url'])
 
 
-            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN2.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -329,7 +329,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN3.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -355,7 +355,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN4.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -380,7 +380,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN5.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -405,7 +405,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html6 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html6 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN6.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -431,7 +431,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
 
 
-            html7 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html7 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN7.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -457,7 +457,7 @@ def newsone(request):
             imgurl=str(row['img-url'])
             
 
-            life += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            life += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataN8.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -476,17 +476,17 @@ def newsone(request):
 
 #Dunya
 def dunya(request):
-#for pakistan
+#for Pakistan
     dataD = newLoad.dfD
     dtlist = []
     data = []
     html ='';  category = ''; updates = '';
     for index, row in dataD.iterrows():
-        if row['category'] == 'pakistan':
+        if row['category'] == 'Pakistan':
             imgurl=str(row['img-url'])
 
 
-            html += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -498,7 +498,7 @@ def dunya(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'pakistan':
+        if ident == 'Pakistan':
             category += "<h2 style='color:black' >" + ident +"</h2>" 
 
 #for world
@@ -511,7 +511,7 @@ def dunya(request):
             imgurl=str(row['img-url'])
 
 
-            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html1 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD1.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -537,7 +537,7 @@ def dunya(request):
             imgurl=str(row['img-url'])
 
 
-            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html2 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD2.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -563,7 +563,7 @@ def dunya(request):
             imgurl=str(row['img-url'])
 
 
-            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html3 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD3.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -589,7 +589,7 @@ def dunya(request):
             imgurl=str(row['img-url'])
 
 
-            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html4 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD4.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])
@@ -614,7 +614,7 @@ def dunya(request):
             imgurl=str(row['img-url'])
 
 
-            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinon </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
+            html5 += "<div class='card' style='margin:2em;width:18em'><img class='card-img-top' src='" + (imgurl if imgurl!="nan" else "http://127.0.0.1:8000/static/images/newsworld.png") + "' alt='Card image cap'><h5 class='card-title'>" + row['title'] + "</h5><div class='card-block'><p class='card-text' style='font-weight: bolder;'>" + row['summery']+ "</p>"+"<div class='card-footer'><p style='font-weight: bolder;'> Opinion </p><small class='text-muted' style='font-weight: bolder;'>"+row['opinion']+"</small></div></div></div>"
     for index, row in dataD5.iterrows():
         dt2=index, row['title'], row['img-url'], row['category'],row['summery'],row['opinion']
         dtlist.append(dt2[3])

@@ -41,7 +41,8 @@ soup = BeautifulSoup(thepage, "html.parser")
 
 if os.path.exists('NewsOnetemp.csv'):
     os.remove('NewsOnetemp.csv')
-
+if os.path.exists('newsone.csv'):
+    os.remove('newsone.csv')
 
 def getLinks(theurl):
     thepage = urllib.request.urlopen(r)
@@ -49,9 +50,8 @@ def getLinks(theurl):
     links = []
 
     for link in soup.ul.findAll('a'):
-        if 'Home' not in  link.text:
+        if link.text != ' Home':
              if link.text != ' Latest News':
-                 if link.text != 'PSL 2019 ':
                      if link.text != 'Blogs ':  #
                          if link.text != 'Opinions':
                              if link.text != 'Multimedia ':
@@ -72,12 +72,13 @@ def getStories(url):
     soup = BeautifulSoup(thepage2, "html.parser")
     stories = []
 
-    for story in soup.select('.post-block > div.summary > h2 > a'):
+    for story in soup.select('.st-block > div.summary > h2 > apo'):
         data=[]
         data.append(story['href'])
         data.append(url[1])
         stories.append(data)
-
+        # masonry-container > div.spacer > div > div > div.col-sm-9.col-xs-12.single-page-tem > section > div > div.page-title > h1
+    # masonry-container > div.spacer.post-list > div > div > div.col-md-9.category-container > div.row > div.cat-bignews-only > div > div.summary.col-md-6.col-xs-12 > h2 > a
     return stories
 
 def getStoryDetails(url):
@@ -87,9 +88,11 @@ def getStoryDetails(url):
     title =soup.select('#masonry-container > div.spacer > div > div > div.col-sm-9.col-xs-12.single-page-tem > section > div > div.page-title > h1')[0].get_text()                     #masonry-container > div.spacer > div > div > div.col-sm-9.col-xs-12.single-page-tem > section > div > div.page-title > h1
 
     news = ''
-    lines =soup.select('#sigle-story > p')
+    lines =soup.select('#sigle-story  p')
     for line in lines:
-        news += line.get_text().replace('\xa0' , '')+' '
+
+        news += line.get_text().replace('“','').replace('”','').replace('\xa0' , '')+' '
+
 
 
     img = soup.select('#masonry-container > div.spacer > div > div > div.col-sm-9.col-xs-12.single-page-tem > section > div > div.single-post > div.post-content > div.post-thumb-single > img')
@@ -171,8 +174,7 @@ def getStoryDetails(url):
         ranked_sentences = sorted(((scores[i], s) for i, s in enumerate(article)), reverse=True)
         mylist = []
         # print(ranked_sentences[0][1])
-        mylist = (ranked_sentences[0][1])
-
+        mylist.append(ranked_sentences[0][1])
         p = []
 
 
@@ -195,12 +197,17 @@ def getStoryDetails(url):
                 writer.writerow(['title', 'news', 'img-url', 'category', 'summery', 'opinion'])
             writer.writerow(new)
             return writer
-for item in getLinks("https://dunyanews.tv"):
+for item in getLinks("https://www.newsone.tv/"):
+    counter=0
     for item2 in (getStories(item)):
-            print(getStoryDetails(item2))
-import os
+            print(counter)
+            if(counter>0):
+                print(getStoryDetails(item2))
+            counter=counter+1
+# import os
+# os.rename('NewsOnetemp.csv', 'newsone.csv')
 
-os.rename('NewsOnetemp.csv', 'newsone.csv')
+
 
 
 

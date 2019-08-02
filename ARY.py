@@ -41,7 +41,8 @@ soup = BeautifulSoup(thepage, "html.parser")
 
 if os.path.exists('AryTemp.csv'):
     os.remove('AryTemp.csv')
-
+if os.path.exists('ary.csv'):
+    os.remove('ary.csv')
 def getLinks(theurl):
 
     thepage = urllib.request.urlopen(r)
@@ -197,7 +198,7 @@ for item in getLinks("https://dunyanews.tv"):
 
 import os
 
-os.rename('Arytmp.csv', 'ary.csv')
+os.rename('AryTemp.csv', 'ary.csv')
 
 
 

@@ -40,6 +40,8 @@ soup = BeautifulSoup(thepage, "html.parser" )
 
 if os.path.exists('DunyaTemp.csv'):
     os.remove('DunyaTemp.csv')
+if os.path.exists('dunya.csv'):
+    os.remove('dunya.csv')
 
 
 

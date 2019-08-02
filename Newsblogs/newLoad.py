@@ -2,9 +2,9 @@ import pandas as pd
 import csv
 
 # pathold = 'E:\webapplications (2)\webapplications\\dunya.csv'
-pathDunya= 'Final-Dunya.csv'
-pathAry = 'Final-ARY.csv'
-pathNOne = 'Final-NewsOne.csv'
+pathDunya= 'dunya.csv'
+pathAry = 'ary.csv'
+pathNOne = 'newsOne.csv'
 chunk_size = 500
 
 # readold=pd.read_csv(pathold, iterator = True)
