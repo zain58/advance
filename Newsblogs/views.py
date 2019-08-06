@@ -325,7 +325,7 @@ def newsone(request):
     data = []
     html3='';  category3 = ''; updates = '';
     for index, row in dataN3.iterrows():
-        if row['category'] == 'Sports':
+        if row['category'] == 'Sports ':
             imgurl=str(row['img-url'])
 
 
@@ -342,7 +342,7 @@ def newsone(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'Sports':
+        if ident == 'Sports ':
             category3 += "<h2 style='color:black' >" + ident +"</h2>"
 
 #for Business
@@ -351,7 +351,7 @@ def newsone(request):
     data = []
     html4='';  category4 = ''; updates = '';
     for index, row in dataN4.iterrows():
-        if row['category'] == 'Business':
+        if row['category'] == 'Business ':
             imgurl=str(row['img-url'])
 
 
@@ -368,7 +368,7 @@ def newsone(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'Business':
+        if ident == 'Business ':
             category4 += "<h2 style='color:black' >" + ident +"</h2>"
 #for Entertainment
     dataN5 = newLoad.dfN
@@ -453,7 +453,7 @@ def newsone(request):
     data = []
     life ='';  category8 = ''; updates = '';
     for index, row in dataN8.iterrows():
-        if row['category'] == 'Lifestyle ':
+        if row['category'] == 'Lifestyle':
             imgurl=str(row['img-url'])
             
 
