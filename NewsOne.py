@@ -17,7 +17,6 @@ import pandas
 from nltk.tokenize import sent_tokenize
 import copy
 import csv
-from textblob import TextBlob
 import os
 nltk.download('stopwords')
 from nltk.corpus import stopwords
@@ -50,9 +49,10 @@ def getLinks(theurl):
     links = []
 
     for link in soup.ul.findAll('a'):
-        if link.text != ' Home':
-             if link.text != ' Latest News':
-                     if link.text != 'Blogs ':  #
+        if link.text != ' Home':
+             if link.text != ' Latest News':
+                if link.text != 'Blogs ':
+                    if link.text != 'PSL 2019':
                          if link.text != 'Opinions':
                              if link.text != 'Multimedia ':
                                  if link.text != 'Documentaries':
@@ -63,7 +63,9 @@ def getLinks(theurl):
                                                      if link.text != "Urdu":
                                                          data=[]
                                                          data.append (link['href']if link['href'].startswith('http') else theurl + link['href'])
+
                                                          data.append(link.text)
+                                                         print(link.text)
                                                          links.append(data)
     return links
 
@@ -72,13 +74,12 @@ def getStories(url):
     soup = BeautifulSoup(thepage2, "html.parser")
     stories = []
 
-    for story in soup.select('.st-block > div.summary > h2 > apo'):
+    for story in soup.select('.post-block > div.summary > h2 > a'):
         data=[]
         data.append(story['href'])
         data.append(url[1])
         stories.append(data)
-        # masonry-container > div.spacer > div > div > div.col-sm-9.col-xs-12.single-page-tem > section > div > div.page-title > h1
-    # masonry-container > div.spacer.post-list > div > div > div.col-md-9.category-container > div.row > div.cat-bignews-only > div > div.summary.col-md-6.col-xs-12 > h2 > a
+
     return stories
 
 def getStoryDetails(url):
@@ -92,6 +93,7 @@ def getStoryDetails(url):
     for line in lines:
 
         news += line.get_text().replace('“','').replace('”','').replace('\xa0' , '')+' '
+    # print(news)
 
 
 
@@ -174,21 +176,25 @@ def getStoryDetails(url):
         ranked_sentences = sorted(((scores[i], s) for i, s in enumerate(article)), reverse=True)
         mylist = []
         # print(ranked_sentences[0][1])
-        mylist.append(ranked_sentences[0][1])
+        mylist = ranked_sentences[0][1]
         p = []
 
 
-        for row in mylist:
-            sentence = row
-            blob = TextBlob(sentence)
-            r = sentence
+        from textblob import TextBlob
+        for sentence in mylist[0]:
+            row = sentence
+            row = mylist
+            blob = TextBlob(row)
+            # r = sentence
             if blob.sentiment.polarity == 0:
                 p = 'neutral'
             elif blob.sentiment.polarity < 0:
                 p = 'negative'
             elif blob.sentiment.polarity > 0:
                 p = 'positive'
-            my = [r, p]
+        # print(blob.sentiment.polarity)
+        print(p)
+
 
         with open('NewsOnetemp.csv', 'a+', encoding='utf-8-sig') as file:
             writer = csv.writer(file, delimiter=',')
@@ -197,6 +203,7 @@ def getStoryDetails(url):
                 writer.writerow(['title', 'news', 'img-url', 'category', 'summery', 'opinion'])
             writer.writerow(new)
             return writer
+
 for item in getLinks("https://www.newsone.tv/"):
     counter=0
     for item2 in (getStories(item)):
@@ -204,8 +211,8 @@ for item in getLinks("https://www.newsone.tv/"):
             if(counter>0):
                 print(getStoryDetails(item2))
             counter=counter+1
-# import os
-# os.rename('NewsOnetemp.csv', 'newsone.csv')
+import os
+os.rename('NewsOnetemp.csv', 'newsone.csv')
 
 
 

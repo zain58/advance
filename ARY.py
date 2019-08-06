@@ -171,17 +171,17 @@ def getStoryDetails(url):
         p = []
 
 
-        for row in mylist:
-            sentence = row
-            blob = TextBlob(sentence)
-            r = sentence
+        for sentence in mylist[0]:
+            row = sentence
+            row = mylist
+            blob = TextBlob(row)
+            # r = sentence
             if blob.sentiment.polarity == 0:
                 p = 'neutral'
             elif blob.sentiment.polarity < 0:
                 p = 'negative'
             elif blob.sentiment.polarity > 0:
                 p = 'positive'
-            my = [r, p]
 
 
         with open('AryTemp.csv', 'a+', encoding= 'utf-8-sig') as file:

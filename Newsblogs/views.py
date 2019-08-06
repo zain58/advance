@@ -316,7 +316,7 @@ def newsone(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'PSL 2019':
+        if ident == 'WORLD CUP 2019':
             category2 += "<h2 style='color:black' >" + ident +"</h2>"
 
 #for Sports

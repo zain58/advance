@@ -1,3 +1,5 @@
+import sys
+from importlib import reload
 
 from bs4 import BeautifulSoup
 import urllib.request
@@ -165,28 +167,32 @@ def getStoryDetails(url):
 
         p = []
 
-        for row in mylist:
-            sentence = row
-            blob = TextBlob(sentence)
-            r = sentence
+        for sentence in mylist[0]:
+            # row = sentence
+            row = mylist
+            blob = TextBlob(row)
+            # r = sentence
             if blob.sentiment.polarity == 0:
                 p = 'neutral'
             elif blob.sentiment.polarity < 0:
                 p = 'negative'
             elif blob.sentiment.polarity > 0:
                 p = 'positive'
-            my = [r, p]
+            # print(p)
 
         with open('DunyaTemp.csv', 'a+', encoding= 'utf-8-sig') as file:
             writer = csv.writer(file, delimiter=',')
+            new = title, news, img, url[1], mylist, p
             if file.tell()==0:
-             writer.writerow(['title', 'news', 'img-url' , 'category' , 'summery' , 'opinion'])
-            writer.writerow([title,news,img,url[1],mylist,p])
+             writer.writerow(['title', 'news', 'img-url','category','summery','opinion'])
+            writer.writerow(new)
             return writer
+
 
 for item in getLinks("https://dunyanews.tv"):
     for item2 in (getStories(item)):
-            print(getStoryDetails(item2))
+        print(getStoryDetails(item2))
+
 import os
 
 os.rename('DunyaTemp.csv', 'dunya.csv')
