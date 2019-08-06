@@ -160,7 +160,7 @@
       <change afterPath="$USER_HOME$/Desktop/header.txt" afterDir="false" />
       <change afterPath="$USER_HOME$/Desktop/jal.wma" afterDir="false" />
       <change afterPath="$USER_HOME$/Desktop/news one.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Newsblogs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Newsblogs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NewsOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NewsOne.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +280,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Newsblogs/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -289,10 +289,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/NewsOne.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2163">
+            <state relative-caret-position="651">
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
@@ -354,8 +354,8 @@
         <option value="$PROJECT_DIR$/ARY.py" />
         <option value="$PROJECT_DIR$/DN.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/http/client.py" />
-        <option value="$PROJECT_DIR$/templates/NewsOne.html" />
         <option value="$PROJECT_DIR$/Newsblogs/views.py" />
+        <option value="$PROJECT_DIR$/templates/NewsOne.html" />
       </list>
     </option>
   </component>
@@ -1041,17 +1041,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/NewsOne.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2163">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Newsblogs/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="458" lean-forward="true" selection-start-line="458" selection-end-line="458" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/NewsOne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
