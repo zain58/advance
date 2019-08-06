@@ -470,7 +470,7 @@ def newsone(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'Lifestyle ':
+        if ident == 'Lifestyle':
             category8 += "<h2 style='color:black' >" + ident +"</h2>"
     return render(request, 'NewsOne.html', {'title': 'HOME- NEWSONE', 'h1': 'NEWSONE', 'categ': category,'html':html, 'categ1': category1,'html1':html1,'categ2': category2,'html2':html2,'categ3': category3,'html3':html3,'categ4': category4,'html4':html4,'categ5': category5,'html5':html5,'categ6': category6,'html6':html6,'categ7': category7,'html7':html7,'categ8': category8,'html8':life,})
 
