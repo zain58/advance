@@ -299,7 +299,7 @@ def newsone(request):
     data = []
     html2='';  category2 = ''; updates = '';
     for index, row in dataN2.iterrows():
-        if row['category'] == 'WORLD CUP 2019':
+        if row['category'] == 'World Cup 2019':
             imgurl=str(row['img-url'])
 
 
@@ -316,7 +316,7 @@ def newsone(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'WORLD CUP 2019':
+        if ident == 'World Cup 2019':
             category2 += "<h2 style='color:black' >" + ident +"</h2>"
 
 #for Sports
