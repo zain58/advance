@@ -482,7 +482,7 @@ def dunya(request):
     data = []
     html ='';  category = ''; updates = '';
     for index, row in dataD.iterrows():
-        if row['category'] == 'Pakistan':
+        if row['category'] == 'pakistan':
             imgurl=str(row['img-url'])
 
 
@@ -498,7 +498,7 @@ def dunya(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'Pakistan':
+        if ident == 'pakistan':
             category += "<h2 style='color:black' >" + ident +"</h2>" 
 
 #for world
@@ -559,7 +559,7 @@ def dunya(request):
     data = []
     html3='';  category3 = ''; updates = '';
     for index, row in dataD3.iterrows():
-        if row['category'] == 'circket':
+        if row['category'] == 'Cricket':
             imgurl=str(row['img-url'])
 
 
@@ -576,7 +576,7 @@ def dunya(request):
     unique(dtlist)
     data.sort()
     for ident in data:
-        if ident == 'circket':
+        if ident == 'Cricket':
             category3 += "<h2 style='color:black' >" + ident +"</h2>"
 
 #for entertainment
